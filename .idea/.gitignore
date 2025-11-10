@@ -8,4 +8,4 @@
 /dataSources/
 /dataSources.local.xml
 # more ignored files
-errors.log
+/errors.log
