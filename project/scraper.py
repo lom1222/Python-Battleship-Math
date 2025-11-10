@@ -7,7 +7,7 @@ last_scrape_time = 0.0
 last_scrape_elapsed_time = 0.0
 fastest_scrape_time = 100.0
 
-scrapes_to_do = 10
+scrapes_to_do = 5000
 max_timeout = 5000
 do_headless = True
 
