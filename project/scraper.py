@@ -1,13 +1,13 @@
 import os
 import time
-
+from helper import progress_bar
 from playwright.sync_api import sync_playwright, Playwright, expect
 
 last_scrape_time = 0.0
 last_scrape_elapsed_time = 0.0
 fastest_scrape_time = 100.0
 
-scrapes_to_do = 5000
+scrapes_to_do = 10
 max_timeout = 5000
 do_headless = True
 
@@ -78,7 +78,7 @@ def reset_errors():
     file.write("")
     file.close()
 
-def log_progress(value, max_value, errors,starting_time):
+def log_progress(value, max_value, errors, starting_time):
     os.system('cls')
     cur_time = time.time()
     global last_scrape_time
@@ -88,7 +88,8 @@ def log_progress(value, max_value, errors,starting_time):
     last_scrape_time = cur_time
     fastest_scrape_time = min(fastest_scrape_time, last_scrape_elapsed_time)
     print("_______Running Scraping________")
-    print("Progress: "+str(value)+"/"+str(max_value)+" ("+"{:.0%}".format(value/max_value)+")")
+    print("Progress: "+str(value)+"/"+str(max_value))
+    print(progress_bar(20,value/max_value*100))
     print("Successful: "+str(value-errors)+" ("+"{:.0%}".format((value-errors)/value)+")")
     print("Errors: "+str(errors)+" ("+"{:.0%}".format(errors/value)+")")
     print("_________________________")
