@@ -44,7 +44,7 @@ def scrape(iterations):
                         class_string = table.locator('.cell-'+str(x)+'-'+str(y)).first.get_attribute('class')
                         if 'undefined' not in class_string:
                             cells.add((x, y))
-                write_to("data.csv", cells)
+                write_to("data.txt", cells)
             except Exception as e:
                 write_to("errors.log", "Unexpected Error: "+str(e))
                 errors += 1
