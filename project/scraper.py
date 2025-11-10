@@ -7,7 +7,7 @@ last_scrape_time = 0.0
 last_scrape_elapsed_time = 0.0
 fastest_scrape_time = 100.0
 
-scrapes_to_do = 1000
+scrapes_to_do = 10
 max_timeout = 5000
 do_headless = True
 
@@ -18,16 +18,23 @@ def scrape(iterations):
     global last_scrape_time
     last_scrape_time = starting_time
     with sync_playwright() as playwright:
+        browser = openBrowser(playwright, timeout=max_timeout, headless_value=do_headless,
+                              ignore_default_args_value=["--mute-audio"])
+        page = getPage(browser, "https://papergames.io/en/battleship")
+        play_robot_button = page.locator('app-juicy-button').get_by_text('Play vs robot')
+        play_robot_button.click()
+        name_textbox = page.get_by_role('textbox')
+        name_textbox.fill('lom')
+        name_confirm_button = page.get_by_text('Continue')
+        name_confirm_button.click()
+        table = page.get_by_role('table').first
+        expect(table).to_be_visible()
+        page.close()
         for iteration in range(iterations):
-            browser = openBrowser(playwright, timeout = max_timeout, headless_value=do_headless, ignore_default_args_value=["--mute-audio"])
             page = getPage(browser, "https://papergames.io/en/battleship")
             try:
                 play_robot_button = page.locator('app-juicy-button').get_by_text('Play vs robot')
                 play_robot_button.click()
-                name_textbox = page.get_by_role('textbox')
-                name_textbox.fill('lom')
-                name_confirm_button = page.get_by_text('Continue')
-                name_confirm_button.click()
                 table = page.get_by_role('table').first
                 expect(table).to_be_visible()
 
@@ -41,8 +48,11 @@ def scrape(iterations):
             except Exception as e:
                 write_to("errors.log", "Unexpected Error: "+str(e))
                 errors += 1
-            browser.close()
-            log_progress(iteration+1, iterations, errors,starting_time)
+            page.close()
+            try:
+                log_progress(iteration+1, iterations, errors,starting_time)
+            except Exception as e:
+                write_to("errors.log", "Unexpected Error: " + str(e))
         playwright.stop()
 
 
