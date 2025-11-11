@@ -1,0 +1,1 @@
+{'next_node_id': 0, 'next_connection_id': 0}

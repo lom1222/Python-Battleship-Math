@@ -5,8 +5,8 @@ from helper import progress_bar
 validation_type = "length"
 data_file = "data.txt"
 
-def validate(data, type):
-    if type=="length":
+def validate(data, val_type):
+    if val_type=="length":
         validate_length(data)
 
 def validate_length(data):
@@ -21,9 +21,9 @@ def validate_length(data):
             validation_dict[length] += 1
         else:
             validation_dict[length] = 1
-        log_progress(line_num+1, file_size, starting_time, validation_dict)
+        log_progress(line_num+1, file_size, starting_time, validation_dict, val_type = "length")
 
-def log_progress(value, max_value, starting_time, validation_dict):
+def log_progress(value, max_value, starting_time, validation_dict, val_type):
     cur_time = time.time()
     output = ("_________Validating ("+validation_type+")_________")
     output += "\n"+(progress_bar(20, value/max_value*100))
@@ -31,11 +31,12 @@ def log_progress(value, max_value, starting_time, validation_dict):
     output += "\n"+("__________________________________")
     output += "\n"+("Time Elapsed: "+str(round(cur_time-starting_time,3))+"s")
     output += "\n"+("__________________________________")
-    output += "\n"+("Lengths: ")
-    keys = list(validation_dict.keys())
-    for key in sorted(keys):
-        data_points = validation_dict[key]
-        output += "\n"+(str(int(key))+": "+str(data_points)+" ("+"{:.0%}".format(data_points/value)+")")
+    if val_type == "length":
+        output += "\n"+("Lengths: ")
+        keys = list(validation_dict.keys())
+        for key in sorted(keys):
+            data_points = validation_dict[key]
+            output += "\n"+(str(int(key))+": "+str(data_points)+" ("+"{:.0%}".format(data_points/value)+")")
     os.system('cls')
     print(output)
 
