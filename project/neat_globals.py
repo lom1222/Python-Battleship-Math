@@ -1,6 +1,6 @@
 import ast
 
-activation_function_list = {"ReLu","Sigmoid","Tanh"}
+activation_function_list = ("ReLu","Sigmoid","Tanh","none")
 globals_dict = dict()
 
 def get_next_node_id():
