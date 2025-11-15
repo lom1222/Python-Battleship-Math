@@ -4,7 +4,7 @@
     "hidden": 0,
     "meta_generation": "test",
     "generation": 0,
-    "agent_id": "large",
+    "agent_id": "zero",
     "fitness": 0,
     "processing_time": 0,
     "game_states_processed": 0,
