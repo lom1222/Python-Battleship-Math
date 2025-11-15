@@ -50,3 +50,15 @@ def create_initial_connections(input_nodes, hidden_nodes, output_nodes):
                                                     output_node={id: output_node_id, type: 'OUTPUT'})
     return connection_list
 
+def load_connections(json_string):
+    connection_list = dict()
+    for connection_id in json_string:
+        connection = json_string[connection_id]
+        input_node = connection["input_node"]
+        output_node = connection["output_node"]
+        connection_list[int(connection_id)] = Connection(connection_id=connection["id"], weight=connection["weight"],
+                                                         enabled=connection["enabled"],
+                                                         input_node={id:input_node["id"], type:input_node["type"]},
+                                                         output_node={id:output_node["id"], type:output_node["type"]})
+    return connection_list
+

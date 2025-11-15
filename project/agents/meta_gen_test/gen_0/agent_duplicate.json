@@ -1,0 +1,64 @@
+{
+    "inputs": 1,
+    "outputs": 1,
+    "hidden": 1,
+    "meta_generation": "test",
+    "generation": 0,
+    "agent_id": "duplicate",
+    "fitness": 0,
+    "processing_time": 0,
+    "game_states_processed": 0,
+    "parents": "ex-nihilo",
+    "input_nodes": {
+        "977": {
+            "node_type": "INPUT",
+            "activation_function": "none",
+            "bias_value": 0,
+            "id": 977
+        }
+    },
+    "hidden_nodes": {
+        "978": {
+            "node_type": "HIDDEN",
+            "activation_function": "ReLu",
+            "bias_value": 0,
+            "id": 978
+        }
+    },
+    "output_nodes": {
+        "979": {
+            "node_type": "OUTPUT",
+            "activation_function": "ReLu",
+            "bias_value": 0,
+            "id": 979
+        }
+    },
+    "connections": {
+        "926": {
+            "input_node": {
+                "id": 977,
+                "type": "INPUT"
+            },
+            "output_node": {
+                "id": 978,
+                "type": "HIDDEN"
+            },
+            "weight": 0,
+            "enabled": true,
+            "id": 926
+        },
+        "927": {
+            "input_node": {
+                "id": 978,
+                "type": "HIDDEN"
+            },
+            "output_node": {
+                "id": 979,
+                "type": "OUTPUT"
+            },
+            "weight": 0,
+            "enabled": true,
+            "id": 927
+        }
+    }
+}

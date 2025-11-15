@@ -1,0 +1,16 @@
+{
+    "inputs": 0,
+    "outputs": 0,
+    "hidden": 0,
+    "meta_generation": "test",
+    "generation": 0,
+    "agent_id": "large",
+    "fitness": 0,
+    "processing_time": 0,
+    "game_states_processed": 0,
+    "parents": "ex-nihilo",
+    "input_nodes": {},
+    "hidden_nodes": {},
+    "output_nodes": {},
+    "connections": {}
+}

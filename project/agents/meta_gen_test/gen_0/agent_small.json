@@ -4,403 +4,403 @@
     "hidden": 1,
     "meta_generation": "test",
     "generation": 0,
-    "agent_id": 0,
+    "agent_id": "small",
     "fitness": 0,
     "processing_time": 0,
     "game_states_processed": 0,
     "parents": "ex-nihilo",
     "input_nodes": {
-        "314": {
+        "980": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 314
+            "id": 980
         },
-        "315": {
+        "981": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 315
+            "id": 981
         },
-        "316": {
+        "982": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 316
+            "id": 982
         },
-        "317": {
+        "983": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 317
+            "id": 983
         },
-        "318": {
+        "984": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 318
+            "id": 984
         },
-        "319": {
+        "985": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 319
+            "id": 985
         },
-        "320": {
+        "986": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 320
+            "id": 986
         },
-        "321": {
+        "987": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 321
+            "id": 987
         },
-        "322": {
+        "988": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 322
+            "id": 988
         },
-        "323": {
+        "989": {
             "node_type": "INPUT",
             "activation_function": "none",
             "bias_value": 0,
-            "id": 323
+            "id": 989
         }
     },
     "hidden_nodes": {
-        "324": {
+        "990": {
             "node_type": "HIDDEN",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 324
+            "id": 990
         }
     },
     "output_nodes": {
-        "325": {
+        "991": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 325
+            "id": 991
         },
-        "326": {
+        "992": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 326
+            "id": 992
         },
-        "327": {
+        "993": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 327
+            "id": 993
         },
-        "328": {
+        "994": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 328
+            "id": 994
         },
-        "329": {
+        "995": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 329
+            "id": 995
         },
-        "330": {
+        "996": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 330
+            "id": 996
         },
-        "331": {
+        "997": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 331
+            "id": 997
         },
-        "332": {
+        "998": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 332
+            "id": 998
         },
-        "333": {
+        "999": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 333
+            "id": 999
         },
-        "334": {
+        "1000": {
             "node_type": "OUTPUT",
             "activation_function": "ReLu",
             "bias_value": 0,
-            "id": 334
+            "id": 1000
         }
     },
     "connections": {
-        "280": {
+        "928": {
             "input_node": {
-                "id": 314,
+                "id": 980,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 280
+            "id": 928
         },
-        "281": {
+        "929": {
             "input_node": {
-                "id": 315,
+                "id": 981,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 281
+            "id": 929
         },
-        "282": {
+        "930": {
             "input_node": {
-                "id": 316,
+                "id": 982,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 282
+            "id": 930
         },
-        "283": {
+        "931": {
             "input_node": {
-                "id": 317,
+                "id": 983,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 283
+            "id": 931
         },
-        "284": {
+        "932": {
             "input_node": {
-                "id": 318,
+                "id": 984,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 284
+            "id": 932
         },
-        "285": {
+        "933": {
             "input_node": {
-                "id": 319,
+                "id": 985,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 285
+            "id": 933
         },
-        "286": {
+        "934": {
             "input_node": {
-                "id": 320,
+                "id": 986,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 286
+            "id": 934
         },
-        "287": {
+        "935": {
             "input_node": {
-                "id": 321,
+                "id": 987,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 287
+            "id": 935
         },
-        "288": {
+        "936": {
             "input_node": {
-                "id": 322,
+                "id": 988,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 288
+            "id": 936
         },
-        "289": {
+        "937": {
             "input_node": {
-                "id": 323,
+                "id": 989,
                 "type": "INPUT"
             },
             "output_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "weight": 0,
             "enabled": true,
-            "id": 289
+            "id": 937
         },
-        "290": {
+        "938": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 325,
+                "id": 991,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 290
+            "id": 938
         },
-        "291": {
+        "939": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 326,
+                "id": 992,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 291
+            "id": 939
         },
-        "292": {
+        "940": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 327,
+                "id": 993,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 292
+            "id": 940
         },
-        "293": {
+        "941": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 328,
+                "id": 994,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 293
+            "id": 941
         },
-        "294": {
+        "942": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 329,
+                "id": 995,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 294
+            "id": 942
         },
-        "295": {
+        "943": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 330,
+                "id": 996,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 295
+            "id": 943
         },
-        "296": {
+        "944": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 331,
+                "id": 997,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 296
+            "id": 944
         },
-        "297": {
+        "945": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 332,
+                "id": 998,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 297
+            "id": 945
         },
-        "298": {
+        "946": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 333,
+                "id": 999,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 298
+            "id": 946
         },
-        "299": {
+        "947": {
             "input_node": {
-                "id": 324,
+                "id": 990,
                 "type": "HIDDEN"
             },
             "output_node": {
-                "id": 334,
+                "id": 1000,
                 "type": "OUTPUT"
             },
             "weight": 0,
             "enabled": true,
-            "id": 299
+            "id": 947
         }
     }
 }

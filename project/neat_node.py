@@ -37,3 +37,12 @@ def create_node_list(num_nodes, node_type, activation_function="ReLu", bias_valu
                                   activation_function=activation_function,
                                   bias_value=bias_value)
     return node_list
+
+def load_nodes(json_string):
+    node_list = dict()
+    for node_id in json_string:
+        node = json_string[node_id]
+        node_list[int(node_id)] = Node(node_id=node["id"], node_type=node["node_type"],
+                                  activation_function=node["activation_function"],
+                                  bias_value=node["bias_value"])
+    return node_list
